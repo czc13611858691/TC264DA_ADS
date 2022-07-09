@@ -1,2 +1,5 @@
 # TC264DA_ADS
- 
+
+-   infineon TC264DA MCU
+-   龙邱开发板
+-   开发环境:AURIX DEVELOPMENT STUDIO V1.6.0
