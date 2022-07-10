@@ -43,12 +43,12 @@ CPU test_application {
 
   OS EE {
     /* EE_OPT = "OS_EE_VERBOSE"; */
-    EE_OPT = "OSEE_DEBUG";
+//    EE_OPT = "OSEE_DEBUG";
     EE_OPT = "OSEE_ASSERT";
     EE_OPT = "OS_EE_APPL_BUILD_DEBUG";
     EE_OPT = "OS_EE_BUILD_DEBUG";
 //    EE_OPT = "OSEE_TRICORE_ILLD";
-    EE_OPT = "OS_EE_GCC";
+//    EE_OPT = "OS_EE_GCC";
 //    EE_OPT = "OSEE_TC_CLONE_OS";
 
     CPU_DATA = TRICORE {

@@ -50,12 +50,15 @@
 
 /* ERIKA Enterprise. */
 #include "shared.h"
+#include <stdint.h>
+uint32_t a=0;
 
 TASK(TaskMaster)
 
 {
   SetEvent(TaskSlave1, RemoteEvent);
   led_blink(OSEE_TRIBOARD_2X5_LED_1);
+  a++;
   /* Cleanly terminate the Task */
   TerminateTask();
 }

@@ -41,11 +41,14 @@
 
 
 #include "shared.h"
+#include <stdint.h>
+uint32_t b=0;
 
 void idle_hook_core1(void);
 void idle_hook_core1(void)
 {
   idle_hook_body();
+  b++;
 }
 
 TASK(TaskSlave1)
@@ -55,6 +58,7 @@ TASK(TaskSlave1)
     //ActivateTask(TaskSlave2);
     led_blink(OSEE_TRIBOARD_2X5_LED_2);
     ClearEvent(RemoteEvent);
+    b++;
   }
   TerminateTask();
 }

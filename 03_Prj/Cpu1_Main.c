@@ -29,9 +29,11 @@
 #include "IfxScuWdt.h"
 
 extern IfxCpu_syncEvent g_cpuSyncEvent;
+uint8 a = 0;
 
 int core1_main(void)
 {
+
     IfxCpu_enableInterrupts();
     
     /* !!WATCHDOG1 IS DISABLED HERE!!
@@ -45,6 +47,7 @@ int core1_main(void)
     
     while(1)
     {
+        a++;
     }
     return (1);
 }
