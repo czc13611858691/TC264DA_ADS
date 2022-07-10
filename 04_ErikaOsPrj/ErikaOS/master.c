@@ -96,9 +96,10 @@ int main(void)
 
   if (core_id == OS_CORE_ID_MASTER) {
     /* Init leds */
-    osEE_tc2x5_leds_init();
+    // osEE_tc2x5_leds_init();
 
     StartCore(OS_CORE_ID_1, &status);
+    // osEE_tc_core1_start();
     //StartCore(OS_CORE_ID_2, &status);
 
     mode = OSDEFAULTAPPMODE;
