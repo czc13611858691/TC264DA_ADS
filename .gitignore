@@ -54,5 +54,7 @@ dkms.conf
 Debug
 *.launch
 .metadata
-erika
-out
+# erika
+# out
+
+04_ErikaOsPrj
